@@ -512,6 +512,19 @@ section{padding:8rem 3rem;position:relative}
   font-weight:300;
   margin-top:.25rem;
 }
+.visit-actions{display:flex;gap:.9rem;flex-wrap:wrap;margin-top:2.2rem}
+.action-btn{
+  display:inline-flex;align-items:center;gap:.55rem;
+  padding:.85rem 1.6rem;
+  font-family:'Inter',sans-serif;font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;font-weight:500;
+  border:1px solid var(--ink);color:var(--ink);background:transparent;
+  border-radius:2px;text-decoration:none;
+  transition:background .3s ease,color .3s ease;
+  white-space:nowrap;
+}
+.action-btn:hover{background:var(--ink);color:#fff}
+.action-btn--primary{background:var(--ink);color:#fff}
+.action-btn--primary:hover{background:var(--sea-deep);border-color:var(--sea-deep)}
 .hours-card{
   background:var(--sea-deep);
   color:#fff;
@@ -876,12 +889,16 @@ footer ul li{margin-bottom:.6rem;font-size:.9rem}
             Walk-ins only
             <small>Indoor counter &amp; waterfront patio</small>
           </dd>
-          <dt>Find Us</dt>
-          <dd>
-            @blackfishcafe
-            <small>hello@blackfishcafe.com</small>
-          </dd>
+          <dt>Phone</dt>
+          <dd><a href="tel:+13603760195" style="color:inherit">(360) 376-0195</a></dd>
+          <dt>Email</dt>
+          <dd><a href="mailto:hello@blackfishcafe.com" style="color:inherit">hello@blackfishcafe.com</a></dd>
         </dl>
+        <div class="visit-actions">
+          <a class="action-btn action-btn--primary" href="https://maps.google.com/?q=Harbor+Lane+Eastsound+Orcas+Island+WA+98245" target="_blank" rel="noopener">Get Directions</a>
+          <a class="action-btn" href="tel:+13603760195">Call Us</a>
+          <a class="action-btn" href="mailto:hello@blackfishcafe.com">Email Us</a>
+        </div>
       </div>
 
       <aside class="hours-card">
@@ -911,9 +928,9 @@ footer ul li{margin-bottom:.6rem;font-size:.9rem}
     <div>
       <h4>Visit</h4>
       <ul>
-        <li>Harbor Lane</li>
+        <li><a href="https://maps.google.com/?q=Harbor+Lane+Eastsound+Orcas+Island+WA+98245" target="_blank" rel="noopener">Harbor Lane</a></li>
         <li>Eastsound, WA 98245</li>
-        <li>Walk-ins welcome</li>
+        <li><a href="tel:+13603760195">(360) 376-0195</a></li>
       </ul>
     </div>
     <div>
@@ -927,7 +944,7 @@ footer ul li{margin-bottom:.6rem;font-size:.9rem}
       <h4>Connect</h4>
       <ul>
         <li>@blackfishcafe</li>
-        <li>hello@blackfishcafe.com</li>
+        <li><a href="mailto:hello@blackfishcafe.com">hello@blackfishcafe.com</a></li>
       </ul>
     </div>
   </div>
